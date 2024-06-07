@@ -8,7 +8,7 @@
 <body>
     
 <input id="num1" type="text">
-<select name="" id="">
+<select name="" id="add">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">*</option>
@@ -20,7 +20,19 @@
 function abc(){
     var a = document.getElementById('num1').value
     var b = document.getElementById('num2').value
-    var c = document.getElementById
+    var c = document.getElementById('add').value
+    if (c == + ){
+        d = parseInt (a) + parseInt (b)
+    }
+    if (c == - ){
+        d = parseInt (a) - parseInt (b)
+    
+    if (c == * ){
+        d = parseInt (a) * parseInt (b)
+    }
+    else {
+        d = parseInt (a) / parseInt (b)
+    }
 }
 
 
